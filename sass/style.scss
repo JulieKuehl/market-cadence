@@ -137,11 +137,26 @@ h3.widget-title {
 
 .cta-box {
     background-color: $site-color-light;
-    padding: 1rem;
+    padding: 1rem 0 4rem;
 }
 
 .cta-box h3 {
     @include font-size(2);
+    float: left;
+}
+
+.btn-cta {
+    background-color: $site-color-accent;
+    color: white;
+    @include font-size(.9);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0;
+    float: right;
+    margin-top: 20px;
 }
 
 /* ----- SIDEBAR ----- */

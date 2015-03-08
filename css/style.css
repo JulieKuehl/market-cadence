@@ -283,11 +283,26 @@ h3.widget-title {
 
 .cta-box {
   background-color: #bdd4de;
-  padding: 1rem; }
+  padding: 1rem 0 4rem; }
 
 .cta-box h3 {
   font-size: 32px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  float: left; }
+
+.btn-cta {
+  background-color: #f15623;
+  color: white;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 0;
+  float: right;
+  margin-top: 20px; }
 
 /* ----- SIDEBAR ----- */
 .sidebar {
