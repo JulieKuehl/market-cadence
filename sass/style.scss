@@ -1,0 +1,224 @@
+/*
+ Theme Name:     Market Cadence
+ Description:    A handcrafted WordPress theme
+ Author:         Mindutopia, Julie Kuehl
+ Author URI:     http://mindutopia.com
+ Version:        1.0
+ Text Domain:    market-cadence
+*/
+
+
+/*--------------------------------------------------------------
+1.0 Initialize
+--------------------------------------------------------------*/
+@import "normalize";
+@import "variables";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+1.0 Initialize
+--------------------------------------------------------------*/
+h3 {
+    @include font-size(1.3);
+}
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+body {
+//    padding-top: 50px;
+}
+
+/* ----- NAV MENU ----- */
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+
+@media (min-width:768px) {
+    .sub-menu {
+        display: none;
+        position: absolute;
+        background: #222;
+        padding: 10px 15px;
+        width: 200px;
+    }
+
+    li:hover .sub-menu {
+        display: block;
+    }
+
+}
+
+.sub-menu li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.sub-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.sub-menu a  {
+    color: #999;
+    text-decoration: none;
+}
+
+.sub-menu a:hover  {
+    color: #fff;
+}
+
+.current-menu-item > a, .current-menu-parent > a {
+    background: #000;
+}
+.current-menu-parent li a {
+    background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-fixed-top {
+    position: static;
+    top: 30px;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-inverse > .container {
+    background-color: $site-color-accent;
+    border-color: $site-color-accent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* ----- FRONT PAGE COLUMNS ----- */
+.front-page-thumbnail {
+    z-index: -99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 35rem;
+}
+
+.home-col {
+    text-align: center;
+    max-width: 18%;
+    float: left;
+    margin-right: 2.5%;
+    padding: 1em;
+}
+
+.home-col:last-child {
+    margin-right: 0;
+}
+
+h3.widget-title {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+/* ----- CTA BOX ----- */
+.widget.cta-box {
+    margin: 0;
+}
+
+.cta-box {
+    background-color: $site-color-light;
+    padding: 1rem;
+}
+
+.cta-box h3 {
+    @include font-size(2);
+}
+
+/* ----- SIDEBAR ----- */
+.sidebar {
+    margin-top: 40px;
+    color: #444;
+}
+
+.sidebar h3 {
+    color: #888;
+}
+
+.widget {
+    margin: 10px 0 30px 0;
+}
+
+
+
+article.post {
+    margin: 20px 0 40px 0;
+}
+
+.featured-image img,
+.portfolio-piece img,
+.portfolio-image img {
+    max-width: 100%;
+}
+
+.prev-next {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+/* ----- FAT FOOTER ----- */
+.fat-footer {
+    background: $site-color-medium;
+}
+
+.fat-footer-col {
+    min-width: 18%;
+//    float: left;
+//    margin-right: 2.5%;
+//    padding: 1em;
+}
+
+.home-col:last-child {
+    margin-right: 0;
+}
+
+.fat-footer-title {
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.fat-footer .textwidget {
+    text-align: left;
+    color: $site-color-light;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    padding: 3rem 0 2rem;
+    color: $site-color-medium;
+}
+
+@media (max-width: 540px) {
+    .portfolio-piece h4 {
+        font-size: .8em;
+    }
+    .prev-next {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+}
+
+.offscreen {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}

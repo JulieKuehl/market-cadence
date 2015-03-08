@@ -1,0 +1,350 @@
+/*
+ Theme Name:     Market Cadence
+ Description:    A handcrafted WordPress theme
+ Author:         Mindutopia, Julie Kuehl
+ Author URI:     http://mindutopia.com
+ Version:        1.0
+ Text Domain:    market-cadence
+*/
+/*--------------------------------------------------------------
+1.0 Initialize
+--------------------------------------------------------------*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* ----- SITE COLORS ----- */
+/* ----- FONT ----- */
+/*--------------------------------------------------------------
+1.0 Initialize
+--------------------------------------------------------------*/
+h3 {
+  font-size: 20.8px;
+  font-size: 1.3rem; }
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/* ----- NAV MENU ----- */
+.admin-bar .navbar-fixed-top {
+  margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background: #222;
+    padding: 10px 15px;
+    width: 200px; }
+
+  li:hover .sub-menu {
+    display: block; } }
+.sub-menu li {
+  margin-bottom: 10px;
+  list-style: none; }
+
+.sub-menu li:last-child {
+  margin-bottom: 0; }
+
+.sub-menu a {
+  color: #999;
+  text-decoration: none; }
+
+.sub-menu a:hover {
+  color: #fff; }
+
+.current-menu-item > a, .current-menu-parent > a {
+  background: #000; }
+
+.current-menu-parent li a {
+  background: inherit; }
+
+.current-menu-parent .current-menu-item a {
+  color: #fff;
+  font-weight: bold; }
+
+.navbar-fixed-top {
+  position: static;
+  top: 30px; }
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent; }
+
+.navbar-inverse > .container {
+  background-color: #f15623;
+  border-color: #f15623; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+/* ----- FRONT PAGE COLUMNS ----- */
+.front-page-thumbnail {
+  z-index: -99999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 35rem; }
+
+.home-col {
+  text-align: center;
+  max-width: 18%;
+  float: left;
+  margin-right: 2.5%;
+  padding: 1em; }
+
+.home-col:last-child {
+  margin-right: 0; }
+
+h3.widget-title {
+  letter-spacing: .2em;
+  text-transform: uppercase; }
+
+/* ----- CTA BOX ----- */
+.widget.cta-box {
+  margin: 0; }
+
+.cta-box {
+  background-color: #bdd4de;
+  padding: 1rem; }
+
+.cta-box h3 {
+  font-size: 32px;
+  font-size: 2rem; }
+
+/* ----- SIDEBAR ----- */
+.sidebar {
+  margin-top: 40px;
+  color: #444; }
+
+.sidebar h3 {
+  color: #888; }
+
+.widget {
+  margin: 10px 0 30px 0; }
+
+article.post {
+  margin: 20px 0 40px 0; }
+
+.featured-image img,
+.portfolio-piece img,
+.portfolio-image img {
+  max-width: 100%; }
+
+.prev-next {
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: right; }
+
+/* ----- FAT FOOTER ----- */
+.fat-footer {
+  background: #516072; }
+
+.fat-footer-col {
+  min-width: 18%; }
+
+.home-col:last-child {
+  margin-right: 0; }
+
+.fat-footer-title {
+  color: white;
+  text-transform: uppercase;
+  text-align: left; }
+
+.fat-footer .textwidget {
+  text-align: left;
+  color: #bdd4de; }
+
+/* ----- FOOTER ----- */
+footer {
+  padding: 3rem 0 2rem;
+  color: #516072; }
+
+@media (max-width: 540px) {
+  .portfolio-piece h4 {
+    font-size: .8em; }
+
+  .prev-next {
+    margin-top: 15px;
+    font-size: 18px; } }
+.offscreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
