@@ -196,6 +196,9 @@ h3 {
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+body {
+  background-color: #efefef; }
+
 #primary-content {
   padding-bottom: 20rem; }
 
@@ -289,10 +292,12 @@ h3.widget-title {
 /* ----- SIDEBAR ----- */
 .sidebar {
   margin-top: 40px;
-  color: #444; }
+  background-color: white; }
 
 .sidebar h3 {
-  color: #888; }
+  color: #516072;
+  text-transform: uppercase;
+  letter-spacing: .2em; }
 
 .widget {
   margin: 10px 0 30px 0; }

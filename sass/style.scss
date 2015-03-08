@@ -26,6 +26,7 @@ h3 {
 -------------------------------------------------------------- */
 body {
 //    padding-top: 50px;
+    background-color: $site-color-background;
 }
 
 #primary-content {
@@ -146,11 +147,13 @@ h3.widget-title {
 /* ----- SIDEBAR ----- */
 .sidebar {
     margin-top: 40px;
-    color: #444;
+    background-color: white;
 }
 
 .sidebar h3 {
-    color: #888;
+    color: $site-color-medium;
+    text-transform: uppercase;
+    letter-spacing: .2em;
 }
 
 .widget {
