@@ -224,9 +224,6 @@ h3 {
 .sub-menu a:hover {
   color: #fff; }
 
-.current-menu-item > a, .current-menu-parent > a {
-  background: #000; }
-
 .current-menu-parent li a {
   background: inherit; }
 
