@@ -1,4 +1,4 @@
-<div class="col-md-3 sidebar">
+<div class="col-md-3 col-md-pull-9 sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'page' ) ): ?>
 
