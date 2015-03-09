@@ -212,6 +212,9 @@ body {
   z-index: -999;
   border-bottom: 1rem solid #516072; }
 
+#primary-content img {
+  height: 40rem; }
+
 .jumbotron .message {
   font-size: 5rem;
   text-transform: uppercase;

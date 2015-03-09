@@ -44,6 +44,10 @@ body {
     border-bottom: 1rem solid $site-color-medium;
 }
 
+#primary-content img {
+    height: 40rem;
+}
+
 .jumbotron .message {
     font-size: 5rem;
     text-transform: uppercase;
