@@ -13,22 +13,25 @@
 <div class="clearfix"></div>
 
 <div class="container">
+	<div class="col-md-12 home-headline">
+		<?php if ( dynamic_sidebar( 'home-headline' ) ); ?>
+	</div><!-- .home-headline -->
 	<div class="row"><!-- Row of columns -->
 		<div class="home-col">
 			<?php if ( dynamic_sidebar( 'home-col-1' ) ); ?>
-		</div><!-- .col-md-4 -->
+		</div><!-- .home-col /1-->
 		<div class="home-col">
 			<?php if ( dynamic_sidebar( 'home-col-2' ) ); ?>
-		</div><!-- .col-md-4 -->
+		</div><!-- .home-col /2 -->
 		<div class="home-col">
 			<?php if ( dynamic_sidebar( 'home-col-3' ) ); ?>
-		</div><!-- .col-md-4 -->
+		</div><!-- .home-col /3 -->
 		<div class="home-col">
 			<?php if ( dynamic_sidebar( 'home-col-4' ) ); ?>
-		</div><!-- .col-md-4 -->
+		</div><!-- .home-col /4 -->
 		<div class="home-col">
 			<?php if ( dynamic_sidebar( 'home-col-5' ) ); ?>
-		</div><!-- .col-md-4 -->
+		</div><!-- .home-col /5 -->
 	</div><!-- .row -->
 </div><!-- .container -->
 
