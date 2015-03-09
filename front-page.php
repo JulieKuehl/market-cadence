@@ -10,24 +10,26 @@
 	</div><!-- .container -->
 </div><!-- .jumbotron -->
 
-	<div class="container">
-		<div class="row"><!-- Row of columns -->
-			<div class="home-col">
-				<?php if ( dynamic_sidebar( 'home-col-1' ) ); ?>
-			</div><!-- .col-md-4 -->
-			<div class="home-col">
-				<?php if ( dynamic_sidebar( 'home-col-2' ) ); ?>
-			</div><!-- .col-md-4 -->
-			<div class="home-col">
-				<?php if ( dynamic_sidebar( 'home-col-3' ) ); ?>
-			</div><!-- .col-md-4 -->
-			<div class="home-col">
-				<?php if ( dynamic_sidebar( 'home-col-4' ) ); ?>
-			</div><!-- .col-md-4 -->
-			<div class="home-col">
-				<?php if ( dynamic_sidebar( 'home-col-5' ) ); ?>
-			</div><!-- .col-md-4 -->
-		</div><!-- .row -->
-	</div><!-- .container -->
+<div class="clearfix"></div>
+
+<div class="container">
+	<div class="row"><!-- Row of columns -->
+		<div class="home-col">
+			<?php if ( dynamic_sidebar( 'home-col-1' ) ); ?>
+		</div><!-- .col-md-4 -->
+		<div class="home-col">
+			<?php if ( dynamic_sidebar( 'home-col-2' ) ); ?>
+		</div><!-- .col-md-4 -->
+		<div class="home-col">
+			<?php if ( dynamic_sidebar( 'home-col-3' ) ); ?>
+		</div><!-- .col-md-4 -->
+		<div class="home-col">
+			<?php if ( dynamic_sidebar( 'home-col-4' ) ); ?>
+		</div><!-- .col-md-4 -->
+		<div class="home-col">
+			<?php if ( dynamic_sidebar( 'home-col-5' ) ); ?>
+		</div><!-- .col-md-4 -->
+	</div><!-- .row -->
+</div><!-- .container -->
 
 <?php get_footer(); ?>

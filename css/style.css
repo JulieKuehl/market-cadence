@@ -209,7 +209,8 @@ body {
   left: 0;
   max-width: 100%;
   height: 600px;
-  z-index: -999; }
+  z-index: -999;
+  border-bottom: 1rem solid #516072; }
 
 /* ----- NAV MENU ----- */
 .admin-bar .navbar-fixed-top {
@@ -267,6 +268,10 @@ body {
 .jumbotron {
   background-color: transparent; }
 
+.jumbotron .btn-cta {
+  float: left;
+  margin-left: 0; }
+
 /* ----- FRONT PAGE COLUMNS ----- */
 .front-page-thumbnail {
   z-index: -99999;
@@ -313,6 +318,7 @@ h3.widget-title {
   letter-spacing: .2em;
   padding: 1rem;
   margin: 0 1rem;
+  border-color: #f15623;
   border-radius: 0;
   float: right;
   margin-top: 20px; }
