@@ -208,7 +208,7 @@ body {
   top: 0;
   left: 0;
   max-width: 100%;
-  height: 70rem;
+  height: 70vh;
   z-index: -999;
   border-bottom: 1rem solid #516072; }
 
@@ -292,10 +292,9 @@ body {
   margin-left: 0; }
 
 /* ----- FRONT PAGE COLUMNS ----- */
-.home-headline {
+.home-headline .widget-title {
   text-align: center;
-  font-size: 17.6px;
-  font-size: 1.1rem; }
+  font-size: 3rem; }
 
 .home-headline .textwidget {
   display: none; }
