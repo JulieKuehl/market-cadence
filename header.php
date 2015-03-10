@@ -21,7 +21,7 @@
 
 <!-- HEADER IMAGE -->
 <?php global $post; ?>
-<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 'full' ), false, '' ); ?>
+<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false ); ?>
 	<div class="page-header-image" style="background: url(<?php echo $src[0]; ?> ) !important;">
 
 		<!-- NAVIGATION BAR -->
