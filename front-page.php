@@ -4,13 +4,14 @@
 <div class="jumbotron">
 	<div class="container">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<?php the_post_thumbnail( 'full' ); ?>
 			<?php the_content(); ?>
 		<?php endwhile; endif; ?>
 	</div><!-- .container -->
 </div><!-- .jumbotron -->
 
-<div class="clearfix"></div>
+</div><!-- .front-page-header-image -->
+
+</div><!-- .page-header-image -->
 
 <div class="container">
 	<div class="col-md-12 home-headline">
