@@ -239,6 +239,16 @@ h3 {
 .admin-bar .navbar-fixed-top {
   margin-top: 30px; }
 
+.widget.social-icons-box {
+  margin: 0; }
+
+.social-icons-box {
+  float: left;
+  margin-right: 2em; }
+
+.color-bar {
+  background-color: #f15623 !important; }
+
 #navbar {
   clear: both; }
 
@@ -281,8 +291,12 @@ h3 {
   background-color: transparent;
   border-color: transparent; }
 
-.navbar-inverse > .container, .well, #menu-button {
-  background-color: #f15623;
+.navbar-inverse > .container, #menu-button {
+  background-color: rgba(241, 86, 35, 0.6);
+  border-color: #f15623; }
+
+.well {
+  background-color: rgba(241, 86, 35, 0.6);
   border-color: #f15623; }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -292,7 +306,19 @@ h3 {
 
 #menu-button {
   float: right;
-  margin-top: .5rem; }
+  margin-top: 1rem;
+  padding: .5rem;
+  color: white; }
+
+#menu-button:focus, #menu-button:visited {
+  border: none; }
+
+.menu-bar-button {
+  float: right;
+  padding-top: 0.5rem; }
+
+.menu-bar-button img {
+  margin-left: 1rem; }
 
 /* ----- FRONT PAGE COLUMNS ----- */
 .home-headline .widget-title {

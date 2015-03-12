@@ -78,6 +78,19 @@ h3 {
     margin-top: 30px;
 }
 
+.widget.social-icons-box {
+    margin: 0;
+}
+
+.social-icons-box {
+    float: left;
+    margin-right: 2em;
+}
+
+.color-bar {
+    background-color: $site-color-accent !important;
+}
+
 #navbar {
     clear: both;
 }
@@ -136,8 +149,13 @@ h3 {
     border-color: transparent;
 }
 
-.navbar-inverse > .container, .well, #menu-button {
-    background-color: $site-color-accent;
+.navbar-inverse > .container, #menu-button {
+    background-color: rgba(241,86,35,.6);
+    border-color: $site-color-accent;
+}
+
+.well {
+    background-color: rgba(241,86,35,.6);
     border-color: $site-color-accent;
 }
 
@@ -149,7 +167,22 @@ h3 {
 
 #menu-button {
     float: right;
-    margin-top: .5rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    color: white;
+}
+
+#menu-button:focus, #menu-button:visited {
+    border: none;
+}
+
+.menu-bar-button {
+    float: right;
+    padding-top: 0.5rem;
+}
+
+.menu-bar-button img {
+    margin-left: 1rem;
 }
 
 /* ----- FRONT PAGE COLUMNS ----- */
