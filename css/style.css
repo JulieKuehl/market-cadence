@@ -6,6 +6,7 @@
  Version:        1.0
  Text Domain:    market-cadence
 */
+
 /*--------------------------------------------------------------
 1.0 Initialize
 --------------------------------------------------------------*/
@@ -66,6 +67,10 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
+
+h3 {
+    font-size: 27.2px;
+    font-size: 1.7rem; }
 
 mark {
   background: #ff0;
@@ -185,15 +190,6 @@ td,
 th {
   padding: 0; }
 
-/* ----- SITE COLORS ----- */
-/* ----- FONT ----- */
-/*--------------------------------------------------------------
-1.0 Initialize
---------------------------------------------------------------*/
-h3 {
-  font-size: 27.2px;
-  font-size: 1.7rem; }
-
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 body {
@@ -282,7 +278,7 @@ body {
   border-color: transparent; }
 
 .navbar-inverse > .container {
-  background-color: #f15623;
+  background-color: ;
   border-color: #f15623; }
 
 .navbar-inverse .navbar-nav > li > a {

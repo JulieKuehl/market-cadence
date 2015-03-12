@@ -187,24 +187,21 @@ th {
 
 /* ----- SITE COLORS ----- */
 /* ----- FONT ----- */
-/*--------------------------------------------------------------
-1.0 Initialize
---------------------------------------------------------------*/
-h3 {
-  font-size: 27.2px;
-  font-size: 1.7rem; }
-
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 body {
   background-color: #efefef; }
+
+h3 {
+  font-size: 27.2px;
+  font-size: 1.7rem; }
 
 #primary-content {
   padding-bottom: 20rem; }
 
 /* ----- FEATURED IMAGES ----- */
 .page-header-image {
-  max-width: 100%;
+  background-size: cover;
   border-bottom: 1rem solid #516072;
   z-index: -999; }
 
@@ -241,6 +238,9 @@ body {
 /* ----- NAV MENU ----- */
 .admin-bar .navbar-fixed-top {
   margin-top: 30px; }
+
+#navbar {
+  clear: both; }
 
 @media (min-width: 768px) {
   .sub-menu {
@@ -281,7 +281,7 @@ body {
   background-color: transparent;
   border-color: transparent; }
 
-.navbar-inverse > .container {
+.navbar-inverse > .container, .well, #menu-button {
   background-color: #f15623;
   border-color: #f15623; }
 
@@ -289,6 +289,10 @@ body {
   color: white;
   text-transform: uppercase;
   font-weight: 300; }
+
+#menu-button {
+  float: right;
+  margin-top: .5rem; }
 
 /* ----- FRONT PAGE COLUMNS ----- */
 .home-headline .widget-title {
