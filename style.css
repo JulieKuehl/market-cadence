@@ -201,7 +201,6 @@ h3 {
 
 /* ----- FEATURED IMAGES ----- */
 .page-header-image {
-  background-size: cover;
   border-bottom: 1rem solid #516072;
   z-index: -999; }
 
@@ -239,18 +238,26 @@ h3 {
 .admin-bar .navbar-fixed-top {
   margin-top: 30px; }
 
-.widget.social-icons-box {
+.navbar-group, .widget.social-icons-box {
   margin: 0; }
+
+.navbar-group {
+  float: right;
+  margin-right: 2em;
+  text-align: center; }
 
 .social-icons-box {
   float: left;
-  margin-right: 2em; }
+  margin-top: 1rem;
+  margin-right: 2rem; }
 
 .color-bar {
   background-color: #f15623 !important; }
 
 #navbar {
-  clear: both; }
+  clear: both;
+  width: 100%;
+  margin: 0; }
 
 @media (min-width: 768px) {
   .sub-menu {
@@ -292,12 +299,19 @@ h3 {
   border-color: transparent; }
 
 .navbar-inverse > .container, #menu-button {
-  background-color: rgba(241, 86, 35, 0.6);
+  background-color: #f15623;
   border-color: #f15623; }
 
 .well {
-  background-color: rgba(241, 86, 35, 0.6);
-  border-color: #f15623; }
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0; }
+
+#well-menu {
+  background-color: rgba(241, 86, 35, 0.6) !important;
+  border-color: rgba(241, 86, 35, 0.6) !important;
+  padding-left: 0;
+  padding-right: 0; }
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
@@ -310,16 +324,15 @@ h3 {
   padding: .5rem;
   color: white; }
 
-#menu-button:focus, #menu-button:visited {
-  border: none; }
-
 .menu-bar-button {
-  float: right;
-  padding-top: 0.5rem; }
+  float: right; }
 
 .menu-bar-button img {
   margin-left: 1rem; }
 
+@media (max-width: 768px) {
+  .navbar-toggle {
+    float: left; } }
 /* ----- FRONT PAGE COLUMNS ----- */
 .home-headline .widget-title {
   text-align: center;
@@ -436,5 +449,11 @@ footer {
   width: 1px;
   height: 1px;
   overflow: hidden; }
+
+:focus {
+  border: 1px solid white; }
+
+a:focus, .menu-button:focus, .btn-default:focus {
+  outline: thin dotted; }
 
 /*# sourceMappingURL=style.css.map */
