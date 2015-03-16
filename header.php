@@ -60,16 +60,16 @@
 					<div class="collapse" id="collapseExample">
 						<div class="well">
 
-							<div id="navbar" class="navbar-right navbar-collapse collapse">
+							<div id="dropped-navbar" class="navbar-collapse collapse">
 
-								<?php
-									$args = array(
-										'menu'          => 'header-menu',
-										'menu_class'    => 'nav navbar-nav',
-										'container'     => 'false',
-									);
-									wp_nav_menu( $args );
-								?>
+									<?php
+										$args = array(
+											'menu'          => 'header-menu',
+											'menu_class'    => 'nav navbar-nav',
+											'container'     => 'false',
+										);
+										wp_nav_menu( $args );
+									?>
 
 							</div><!--/.navbar-collapse -->
 

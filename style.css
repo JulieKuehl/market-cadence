@@ -254,11 +254,6 @@ h3 {
 .color-bar {
   background-color: #f15623 !important; }
 
-#navbar {
-  clear: both;
-  width: 100%;
-  margin: 0; }
-
 @media (min-width: 768px) {
   .sub-menu {
     display: none;
@@ -305,13 +300,27 @@ h3 {
 .well {
   background-color: transparent;
   border-color: transparent;
-  padding: 0; }
+  padding: 0;
+  margin: 0 auto; }
 
 #well-menu {
   background-color: rgba(241, 86, 35, 0.6) !important;
   border-color: rgba(241, 86, 35, 0.6) !important;
   padding-left: 0;
   padding-right: 0; }
+
+#dropped-navbar {
+  margin: 0 auto; }
+
+#menu-main-menu {
+  float: none;
+  display: table;
+  width: 100%;
+  margin: 0 auto; }
+
+#menu-main-menu li {
+  width: 12.5%;
+  text-align: center; }
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
@@ -331,8 +340,15 @@ h3 {
   margin-left: 1rem; }
 
 @media (max-width: 768px) {
-  .navbar-toggle {
-    float: left; } }
+  .navbar-nav > li {
+    display: none; }
+
+  .social-icons-box, .menu-bar-button {
+    display: none; }
+
+  .navbar-inverse .navbar-toggle {
+    float: left;
+    border-color: white; } }
 /* ----- FRONT PAGE COLUMNS ----- */
 .home-headline .widget-title {
   text-align: center;
@@ -436,9 +452,6 @@ footer {
   color: #516072; }
 
 @media (max-width: 540px) {
-  .portfolio-piece h4 {
-    font-size: .8em; }
-
   .prev-next {
     margin-top: 15px;
     font-size: 18px; } }
@@ -450,10 +463,9 @@ footer {
   height: 1px;
   overflow: hidden; }
 
-:focus {
-  border: 1px solid white; }
-
 a:focus, .menu-button:focus, .btn-default:focus {
   outline: thin dotted; }
+
+/* ----- MEDIA QUERIES ----- */
 
 /*# sourceMappingURL=style.css.map */
