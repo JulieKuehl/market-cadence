@@ -25,7 +25,7 @@
 	<div class="page-header-image" style="background: #bdd4de url(<?php echo $src[0]; ?> ) no-repeat center center !important;">
 
 		<!--- NAV BAR --->
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="floating-navbar" role="navigation">
 			<div class="container">
 				<div class="color-bar">
 					<div class="navbar-header">
@@ -71,13 +71,14 @@
 										wp_nav_menu( $args );
 									?>
 
-							</div><!--/.navbar-collapse -->
+							</div><!-- .navbar-collapse #dropped-navbar -->
 
 						</div><!-- .well -->
 					</div><!-- .collapse -->
 				</div><!-- .navbar-group -->
 			</div><!-- .container #well-menu -->
 		</nav>
+	</div><!-- .page-header-image -->
 
 
 <div id="content">

@@ -211,6 +211,9 @@ h3 {
 .jumbotron {
   background-color: transparent; }
 
+.jumbotron > .container {
+  padding-top: 12rem; }
+
 .jumbotron .message {
   font-size: 5rem;
   text-transform: uppercase;
@@ -235,8 +238,9 @@ h3 {
   margin-left: 0; }
 
 /* ----- NAV MENU ----- */
-.admin-bar .navbar-fixed-top {
-  margin-top: 30px; }
+#floating-navbar {
+  position: absolute;
+  top: 2rem; }
 
 .navbar-group, .widget.social-icons-box {
   margin: 0; }
@@ -399,11 +403,11 @@ h3.widget-title {
   border-color: #f15623;
   border-radius: 0;
   float: right;
-  margin-top: 20px; }
+  margin-top: 1.5rem; }
 
 /* ----- SIDEBAR ----- */
 .sidebar {
-  margin-top: 40px;
+  margin-top: 4rem;
   background-color: white; }
 
 .sidebar h3 {

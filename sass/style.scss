@@ -15,10 +15,11 @@
 @import "variables";
 @import "mixins/mixins-master";
 
+
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
 body {
-//    padding-top: 50px;
     background-color: $site-color-background;
 }
 
@@ -30,10 +31,9 @@ h3 {
     padding-bottom: 20rem;
 }
 
+
 /* ----- FEATURED IMAGES ----- */
 .page-header-image {
-//    background: $site-color-light url(/images/default.jpg) no-repeat center center;
-//    background-size: cover;
     border-bottom: 1rem solid $site-color-medium;
     z-index: -999;
 }
@@ -42,9 +42,14 @@ h3 {
     min-height: 25rem;
 }
 
+
 /* ----- JUMBOTRON ----- */
 .jumbotron {
     background-color: transparent;
+}
+
+.jumbotron > .container {
+    padding-top: 12rem;
 }
 
 .jumbotron .message {
@@ -73,9 +78,11 @@ h3 {
     margin-left: 0;
 }
 
+
 /* ----- NAV MENU ----- */
-.admin-bar .navbar-fixed-top {
-    margin-top: 30px;
+#floating-navbar {
+    position: absolute;
+    top: 2rem;
 }
 
 .navbar-group, .widget.social-icons-box {
@@ -254,6 +261,7 @@ h3.widget-title {
     text-transform: uppercase;
 }
 
+
 /* ----- CTA BOX ----- */
 .widget.cta-box {
     margin: 0;
@@ -283,12 +291,13 @@ h3.widget-title {
     border-color: $site-color-accent;
     border-radius: 0;
     float: right;
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
+
 
 /* ----- SIDEBAR ----- */
 .sidebar {
-    margin-top: 40px;
+    margin-top: 4rem;
     background-color: white;
 }
 
@@ -325,10 +334,7 @@ article.post {
 }
 
 .fat-footer-col {
-    min-width: 18%;
-//    float: left;
-//    margin-right: 2.5%;
-//    padding: 1em;
+    min-width: 18%; // 100% divided by the number of columns (5) with allowing for padding
 }
 
 .home-col:last-child {
@@ -345,6 +351,7 @@ article.post {
     text-align: left;
     color: $site-color-light;
 }
+
 
 /* ----- FOOTER ----- */
 footer {
@@ -371,6 +378,7 @@ footer {
 a:focus, .menu-button:focus, .btn-default:focus {
     outline: thin dotted;
 }
+
 
 /* ----- MEDIA QUERIES ----- */
 @media (max-width: 540px) {
