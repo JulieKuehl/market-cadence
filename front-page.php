@@ -54,12 +54,8 @@
 						<?php if ( dynamic_sidebar( 'social-icons-box' ) ); ?>
 					</div><!-- .social-icons-box -->
 
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/menu.png" title="Menu icon" />
-					</button>
-
 					<button class="btn btn-default" id="menu-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						<span class="sr-only">Toggle navigation</span>
 						<div class="menu-bar-button">
 							MENU <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/menu.png" title="Menu icon" />
 						</div><!-- .menu-bar-button -->

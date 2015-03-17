@@ -343,16 +343,6 @@ h3 {
 .menu-bar-button img {
   margin-left: 1rem; }
 
-@media (max-width: 768px) {
-  .navbar-nav > li {
-    display: none; }
-
-  .social-icons-box, .menu-bar-button {
-    display: none; }
-
-  .navbar-inverse .navbar-toggle {
-    float: left;
-    border-color: white; } }
 /* ----- FRONT PAGE COLUMNS ----- */
 .home-headline .widget-title {
   text-align: center;
@@ -471,6 +461,31 @@ a:focus, .menu-button:focus, .btn-default:focus {
   outline: thin dotted; }
 
 /* ----- MEDIA QUERIES ----- */
+@media (max-width: 768px) {
+  .social-icons-box {
+    display: none; }
+
+  .menu-bar-button {
+    float: left; }
+
+  .navbar-inverse .navbar-toggle {
+    float: left;
+    border-color: white; }
+
+  .jumbotron p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0; }
+
+  .home-col {
+    float: none;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .fat-footer {
+    display: none; } }
 @media (max-width: 1199px) {
   .cta-box {
     padding-bottom: 2.5rem; }
@@ -489,6 +504,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
   .cta-box .btn-cta {
     clear: both;
     float: none;
+    width: 90%;
     margin: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */
