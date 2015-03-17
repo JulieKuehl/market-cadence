@@ -392,3 +392,28 @@ a:focus, .menu-button:focus, .btn-default:focus {
 @media (min-width: 768px) {
 
 }
+
+@media (max-width: 1199px) {
+    .cta-box {
+        padding-bottom: 2.5rem;
+    }
+
+    .cta-box .widget-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        clear: both;
+    }
+
+    .cta-box .textwidget {
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-box .btn-cta {
+        clear: both;
+        float: none;
+        margin: 1rem;
+    }
+}
