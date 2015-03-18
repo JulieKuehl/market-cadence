@@ -105,21 +105,6 @@ h3 {
     background-color: $site-color-accent !important;
 }
 
-@media (min-width:768px) {
-    .sub-menu {
-        display: none;
-        position: absolute;
-        background: #222;
-        padding: 10px 15px;
-        width: 200px;
-    }
-
-    li:hover .sub-menu {
-        display: block;
-    }
-
-}
-
 .sub-menu li {
     margin-bottom: 10px;
     list-style: none;
@@ -343,13 +328,6 @@ footer {
     color: $site-color-medium;
 }
 
-@media (max-width: 540px) {
-    .prev-next {
-        margin-top: 15px;
-        font-size: 18px;
-    }
-}
-
 .offscreen {
     position:absolute;
     left:-10000px;
@@ -365,13 +343,16 @@ a:focus, .menu-button:focus, .btn-default:focus {
 
 
 /* ----- MEDIA QUERIES ----- */
-@media (max-width: 540px) {
-
+@media only screen and (max-device-width: 540px) {
+    .prev-next {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+    }
 }
 
-@media (max-width: 768px) {
-    .navbar-nav>li {
-        //        display: none;
+@media screen and (max-width: 767px) {
+    .navbar-header {
+        float: left;
     }
 
     .social-icons-box {
@@ -379,13 +360,24 @@ a:focus, .menu-button:focus, .btn-default:focus {
     }
 
     .menu-bar-button {
-        //        display: none;
-        float: left;
+        float: right;
     }
 
-    .navbar-inverse .navbar-toggle {
-        float: left;
-        border-color: white;
+    #dropped-navbar {
+        border: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: block;
+        height: auto;
+        padding-bottom: 0;
+        overflow: visible;
+        visibility: visible;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .jumbotron p {
@@ -407,11 +399,21 @@ a:focus, .menu-button:focus, .btn-default:focus {
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width:768px) {
+    .sub-menu {
+        display: none;
+        position: absolute;
+        background: #222;
+        padding: 10px 15px;
+        width: 200px;
+    }
 
+    li:hover .sub-menu {
+        display: block;
+    }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     .cta-box {
         padding-bottom: 2.5rem;
     }
