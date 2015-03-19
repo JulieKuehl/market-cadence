@@ -343,10 +343,14 @@ a:focus, .menu-button:focus, .btn-default:focus {
 
 
 /* ----- MEDIA QUERIES ----- */
-@media only screen and (max-device-width: 540px) {
+@media only screen and (max-width: 540px) {
     .prev-next {
         margin-top: 1rem;
         font-size: 1.125rem;
+    }
+
+    #menu-text {
+        display: none;
     }
 }
 

@@ -447,10 +447,13 @@ a:focus, .menu-button:focus, .btn-default:focus {
   outline: thin dotted; }
 
 /* ----- MEDIA QUERIES ----- */
-@media only screen and (max-device-width: 540px) {
+@media only screen and (max-width: 540px) {
   .prev-next {
     margin-top: 1rem;
-    font-size: 1.125rem; } }
+    font-size: 1.125rem; }
+
+  #menu-text {
+    display: none; } }
 @media screen and (max-width: 767px) {
   .navbar-header {
     float: left; }
