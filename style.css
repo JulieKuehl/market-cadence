@@ -499,6 +499,9 @@ a:focus, .menu-button:focus, .btn-default:focus {
     margin-left: auto;
     margin-right: auto; }
 
+  .home-col:last-child {
+    margin-right: auto; }
+
   .fat-footer {
     display: none; } }
 @media screen and (min-width: 768px) {
