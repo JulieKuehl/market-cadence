@@ -21,6 +21,7 @@
 
 body {
     background-color: $site-color-background;
+    max-width: 100%;
 }
 
 h3 {
@@ -76,6 +77,8 @@ h3 {
 .jumbotron .btn-cta {
     float: left;
     margin-left: 0;
+    max-width: 98%;
+    overflow: scroll;
 }
 
 
@@ -344,6 +347,16 @@ a:focus, .menu-button:focus, .btn-default:focus {
 
 /* ----- MEDIA QUERIES ----- */
 @media only screen and (max-width: 540px) {
+    .navbar > .container .navbar-brand {
+        margin-left: -15px;
+    }
+
+    .navbar-group {
+        margin-right: -10px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
     .prev-next {
         margin-top: 1rem;
         font-size: 1.125rem;
@@ -363,7 +376,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
         display: none;
     }
 
-    .menu-bar-button {
+    #menu-button {
         float: right;
     }
 
@@ -385,7 +398,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
     }
 
     .jumbotron p {
-        width: 90%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
         padding-right: 0;

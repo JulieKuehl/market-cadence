@@ -190,7 +190,8 @@ th {
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 body {
-  background-color: #efefef; }
+  background-color: #efefef;
+  max-width: 100%; }
 
 h3 {
   font-size: 27.2px;
@@ -235,7 +236,9 @@ h3 {
 
 .jumbotron .btn-cta {
   float: left;
-  margin-left: 0; }
+  margin-left: 0;
+  max-width: 98%;
+  overflow: scroll; }
 
 /* ----- NAV MENU ----- */
 #floating-navbar {
@@ -448,6 +451,12 @@ a:focus, .menu-button:focus, .btn-default:focus {
 
 /* ----- MEDIA QUERIES ----- */
 @media only screen and (max-width: 540px) {
+  .navbar > .container .navbar-brand {
+    margin-left: -15px; }
+
+  .navbar-group {
+    margin-right: -10px; } }
+@media only screen and (max-width: 540px) {
   .prev-next {
     margin-top: 1rem;
     font-size: 1.125rem; }
@@ -461,7 +470,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
   .social-icons-box {
     display: none; }
 
-  .menu-bar-button {
+  #menu-button {
     float: right; }
 
   #dropped-navbar {
@@ -479,7 +488,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
     padding-bottom: 1rem; }
 
   .jumbotron p {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     padding-right: 0; }
