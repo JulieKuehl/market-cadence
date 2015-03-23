@@ -8,9 +8,9 @@
 	<div class="row">
 		<div class="col-md-9 col-md-push-3">
 
-				<div class="page-header">
-					<h1><?php the_title(); ?></h1>
-				</div><!-- .page-header -->
+<!--				<div class="page-header">-->
+<!--					<h1>--><?php //the_title(); ?><!--</h1>-->
+<!--				</div><!-- .page-header -->
 
 				<?php the_content(); ?>
 
@@ -23,6 +23,11 @@
 
 			<?php endif; ?>
 		</div><!-- .col-md-9 -->
+		<div id="sidebar-menu" class="col-md-3 col-md-pull-9 sidebar">
+			<div class=widget">
+				<h3 class="widget-title"><?php the_title(); ?></h3>
+			</div>
+		</div>
 
 		<?php get_sidebar(); ?>
 

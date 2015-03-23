@@ -24,12 +24,44 @@ body {
     max-width: 100%;
 }
 
+.page-header h1 {
+    padding-top: 15rem;
+    @include font-size(5);
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+}
+
+.page-header {
+    border-bottom: none;
+}
+
+h2 {
+    @include font-size(1.7);
+    color: $site-color-accent;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 1.7rem;
+}
+
 h3 {
     @include font-size(1.7);
 }
 
+p {
+    line-height: 2.75rem;
+}
+
 #primary-content {
+    padding-top: 4rem;
     padding-bottom: 20rem;
+}
+
+.promoted-text {
+    @include font-size(1.7);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 
@@ -269,7 +301,7 @@ h3.widget-title {
 
 /* ----- SIDEBAR ----- */
 .sidebar {
-    margin-top: 4rem;
+//    margin-top: 4rem;
     background-color: white;
 }
 

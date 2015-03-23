@@ -127,6 +127,15 @@ function market_cadence_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
+		'name'          => __( 'Sidebar Menu', 'market-cadence' ),
+		'id'            => 'sidebar-menu',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget sidebar-menu %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title"><?php the_title(); ?>',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'Fat Footer Column 1', 'market-cadence' ),
 		'id'            => 'fat-footer-col-1',
 		'description'   => '',

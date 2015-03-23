@@ -23,6 +23,11 @@
 <?php global $post; ?>
 <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large', false ); ?>
 <div class="page-header-image" style="background: #bdd4de url(<?php echo $src[0]; ?> ) no-repeat center center !important;">
+	<div class="container">
+		<div class="page-header">
+			<h1><?php the_title(); ?>.</h1>
+		</div><!-- .page-header -->
+	</div><!-- .container -->
 
 	<!--- NAV BAR --->
 	<nav class="navbar navbar-inverse navbar-fixed-top" id="floating-navbar" role="navigation">
