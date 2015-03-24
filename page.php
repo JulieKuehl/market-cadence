@@ -23,13 +23,17 @@
 
 			<?php endif; ?>
 		</div><!-- .col-md-9 -->
-		<div id="sidebar-menu" class="col-md-3 col-md-pull-9 sidebar">
+		<div id="sidebar-menu-title" class="col-md-3 col-md-pull-9 sidebar">
 			<div class=widget">
-				<h3 class="widget-title"><?php the_title(); ?></h3>
+				<h3 class="widget-title"><?php the_field( 'menu_header' ); ?></h3>
+				<div class="sidebar-menu-items">
+					<?php the_field( 'sidebar_menu_items' ); ?>
+				</div>
 			</div>
 		</div>
-
-		<?php get_sidebar(); ?>
+		<div id="sidebar-menu">
+			<?php get_sidebar(); ?>
+		</div>
 
 	</div><!-- .row -->
 </div><!-- .container -->

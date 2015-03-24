@@ -311,14 +311,58 @@ h3.widget-title {
     background-color: white;
 }
 
+#sidebar-menu-title {
+    padding: 1rem;
+}
+
+#sidebar-menu {
+    padding-left: 0;
+}
+
 .sidebar h3 {
     color: $site-color-medium;
     text-transform: uppercase;
     letter-spacing: .2em;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 .widget {
     margin: 10px 0 30px 0;
+}
+
+/* ----- CUSTOM FIELDS SIDEBAR MENU ----- */
+.sidebar h3 a {
+    color: $site-color-accent
+}
+
+.sidebar h3 a:hover {
+    text-decoration: none;
+    color: $site-color-dark;
+}
+
+.sidebar-menu-items ul {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sidebar-menu-items li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.sidebar-menu-items a {
+    color: $site-color-dark;
+}
+
+.sidebar-menu-items a:hover {
+    text-decoration: none;
+    color: $site-color-accent;
+}
+
+#menu-sidebar-menu {
+    list-style: none;
+    padding-left: 1rem;
 }
 
 
@@ -385,6 +429,10 @@ a:focus, .menu-button:focus, .btn-default:focus {
 
 /* ----- MEDIA QUERIES ----- */
 @media only screen and (max-width: 540px) {
+    #primary-content {
+        padding-bottom: 0;
+    }
+
     .navbar > .container .navbar-brand {
         margin-left: -15px;
     }
@@ -392,9 +440,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
     .navbar-group {
         margin-right: -10px;
     }
-}
 
-@media only screen and (max-width: 540px) {
     .prev-next {
         margin-top: 1rem;
         font-size: 1.125rem;
@@ -406,6 +452,11 @@ a:focus, .menu-button:focus, .btn-default:focus {
 }
 
 @media screen and (max-width: 767px) {
+
+    #primary-content {
+        padding-bottom: 0;
+    }
+
     .navbar-header {
         float: left;
     }

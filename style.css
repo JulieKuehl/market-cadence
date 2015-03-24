@@ -427,13 +427,48 @@ h3.widget-title {
 .sidebar {
   background-color: white; }
 
+#sidebar-menu-title {
+  padding: 1rem; }
+
+#sidebar-menu {
+  padding-left: 0; }
+
 .sidebar h3 {
   color: #516072;
   text-transform: uppercase;
-  letter-spacing: .2em; }
+  letter-spacing: .2em;
+  padding-left: 1rem;
+  padding-bottom: 1rem; }
 
 .widget {
   margin: 10px 0 30px 0; }
+
+/* ----- CUSTOM FIELDS SIDEBAR MENU ----- */
+.sidebar h3 a {
+  color: #f15623; }
+
+.sidebar h3 a:hover {
+  text-decoration: none;
+  color: #32322f; }
+
+.sidebar-menu-items ul {
+  padding-left: 1rem;
+  padding-bottom: 1rem; }
+
+.sidebar-menu-items li {
+  list-style: none;
+  padding-bottom: 1rem; }
+
+.sidebar-menu-items a {
+  color: #32322f; }
+
+.sidebar-menu-items a:hover {
+  text-decoration: none;
+  color: #f15623; }
+
+#menu-sidebar-menu {
+  list-style: none;
+  padding-left: 1rem; }
 
 article.post {
   margin: 20px 0 40px 0; }
@@ -485,12 +520,15 @@ a:focus, .menu-button:focus, .btn-default:focus {
 
 /* ----- MEDIA QUERIES ----- */
 @media only screen and (max-width: 540px) {
+  #primary-content {
+    padding-bottom: 0; }
+
   .navbar > .container .navbar-brand {
     margin-left: -15px; }
 
   .navbar-group {
-    margin-right: -10px; } }
-@media only screen and (max-width: 540px) {
+    margin-right: -10px; }
+
   .prev-next {
     margin-top: 1rem;
     font-size: 1.125rem; }
@@ -498,6 +536,9 @@ a:focus, .menu-button:focus, .btn-default:focus {
   #menu-text {
     display: none; } }
 @media screen and (max-width: 767px) {
+  #primary-content {
+    padding-bottom: 0; }
+
   .navbar-header {
     float: left; }
 
