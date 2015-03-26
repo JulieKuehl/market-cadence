@@ -421,7 +421,8 @@ h3.widget-title {
   border-color: #f15623;
   border-radius: 0;
   float: right;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  overflow: scroll; }
 
 /* ----- SIDEBAR ----- */
 .sidebar {
@@ -608,6 +609,7 @@ a:focus, .menu-button:focus, .btn-default:focus {
     clear: both;
     float: none;
     width: 90%;
-    margin: 1rem; } }
+    margin: 1rem;
+    overflow: scroll; } }
 
 /*# sourceMappingURL=style.css.map */

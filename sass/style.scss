@@ -302,6 +302,7 @@ h3.widget-title {
     border-radius: 0;
     float: right;
     margin-top: 1.5rem;
+    overflow: scroll;
 }
 
 
@@ -546,5 +547,6 @@ a:focus, .menu-button:focus, .btn-default:focus {
         float: none;
         width: 90%;
         margin: 1rem;
+        overflow: scroll;
     }
 }
